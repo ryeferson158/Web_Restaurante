@@ -19,19 +19,19 @@ export default function Inicio() {
       <section className="container py-5">
         <div className="row g-4 text-center">
           <div className="col-md-4">
-            <img src="/imagen/portada2.jpg" alt="Calidad" className="rounded-circle shadow mb-3"
+            <img src={`${import.meta.env.BASE_URL}imagen/portada2.jpg`} alt="Calidad" className="rounded-circle shadow mb-3"
               style={{ width: 140, height: 140, objectFit: 'cover' }} />
             <h2 className="h4 fw-bold">Calidad excepcional</h2>
             <p className="text-muted">Seleccionamos cada ingrediente para garantizar el mejor sabor.</p>
           </div>
           <div className="col-md-4">
-            <img src="/imagen/portada3.jpg" alt="Pasión" className="rounded-circle shadow mb-3"
+            <img src={`${import.meta.env.BASE_URL}imagen/portada3.jpg`} alt="Pasión" className="rounded-circle shadow mb-3"
               style={{ width: 140, height: 140, objectFit: 'cover' }} />
             <h2 className="h4 fw-bold">Pasión por la cocina</h2>
             <p className="text-muted">Recetas tradicionales con técnicas modernas para sorprenderte.</p>
           </div>
           <div className="col-md-4">
-            <img src="/imagen/portada4.jpg" alt="Ambiente" className="rounded-circle shadow mb-3"
+            <img src={`${import.meta.env.BASE_URL}imagen/portada4.jpg`} alt="Ambiente" className="rounded-circle shadow mb-3"
               style={{ width: 140, height: 140, objectFit: 'cover' }} />
             <h2 className="h4 fw-bold">Ambiente acogedor</h2>
             <p className="text-muted">Un espacio pensado para compartir con tu familia y amigos.</p>
