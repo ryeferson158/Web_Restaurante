@@ -1,0 +1,207 @@
+/* Paleta de colores */
+:root {
+  /* Colores del diseño */
+  --grafito: #222222;
+  --gris-calido: #77736C;
+  --marfil: #F5F3EF;
+  --dorado: #C6A76A;
+  --blanco: #FFFFFF;
+  --verde-bosque: #467653;
+  --ladrillo: #A64B3C;
+
+  /* Bootstrap: fondo y texto general */
+  --bs-body-bg: var(--marfil);
+  --bs-body-bg-rgb: 245, 243, 239;
+  --bs-body-color: var(--grafito);
+  --bs-body-color-rgb: 34, 34, 34;
+  --bs-secondary-color: var(--gris-calido);
+  --bs-secondary-bg: #E9E5DD;
+  --bs-border-color: #E3DFD7;
+
+  /* Bootstrap: nombres de color */
+  --bs-dark: var(--grafito);          --bs-dark-rgb: 34, 34, 34;
+  --bs-secondary: var(--gris-calido); --bs-secondary-rgb: 119, 115, 108;
+  --bs-light: var(--marfil);          --bs-light-rgb: 245, 243, 239;
+  --bs-warning: var(--dorado);        --bs-warning-rgb: 198, 167, 106;
+  --bs-primary: var(--dorado);        --bs-primary-rgb: 198, 167, 106;
+  --bs-success: var(--verde-bosque);  --bs-success-rgb: 70, 118, 83;
+  --bs-danger: var(--ladrillo);       --bs-danger-rgb: 166, 75, 60;
+  --bs-info: var(--dorado);           --bs-info-rgb: 198, 167, 106;
+
+  /* Bootstrap: avisos */
+  --bs-success-bg-subtle: #E3EDE6;  --bs-success-border-subtle: #B5CFBC;  --bs-success-text-emphasis: #2B4A34;
+  --bs-danger-bg-subtle: #F4E1DD;   --bs-danger-border-subtle: #DDB3AB;   --bs-danger-text-emphasis: #682F25;
+  --bs-info-bg-subtle: #F6EFDF;     --bs-info-border-subtle: #E4D5B2;     --bs-info-text-emphasis: #6B5829;
+
+  --bs-link-color: #8F7539;
+  --bs-link-color-rgb: 143, 117, 57;
+  --bs-link-hover-color: var(--grafito);
+  --bs-focus-ring-color: rgba(198, 167, 106, 0.35);
+}
+
+/* Blanco: tarjetas, formularios, ventanas emergentes y tablas */
+.card { --bs-card-bg: var(--blanco); }
+.modal-content { --bs-modal-bg: var(--blanco); }
+.table { --bs-table-bg: var(--blanco); }
+.form-control,
+.form-select { background-color: var(--blanco); }
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--dorado);
+  box-shadow: 0 0 0 0.25rem rgba(198, 167, 106, 0.3);
+}
+.form-check-input:checked {
+  background-color: var(--dorado);
+  border-color: var(--dorado);
+}
+
+/* Dorado: botones destacados */
+.btn-warning,
+.btn-primary {
+  --bs-btn-color: var(--grafito);
+  --bs-btn-bg: var(--dorado);
+  --bs-btn-border-color: var(--dorado);
+  --bs-btn-hover-color: var(--grafito);
+  --bs-btn-hover-bg: #B8975A;
+  --bs-btn-hover-border-color: #B8975A;
+  --bs-btn-focus-shadow-rgb: 198, 167, 106;
+  --bs-btn-active-color: var(--grafito);
+  --bs-btn-active-bg: #A98A4D;
+  --bs-btn-active-border-color: #A98A4D;
+  --bs-btn-disabled-color: var(--grafito);
+  --bs-btn-disabled-bg: var(--dorado);
+  --bs-btn-disabled-border-color: var(--dorado);
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--grafito);
+  --bs-btn-border-color: var(--dorado);
+  --bs-btn-hover-color: var(--grafito);
+  --bs-btn-hover-bg: var(--dorado);
+  --bs-btn-hover-border-color: var(--dorado);
+  --bs-btn-focus-shadow-rgb: 198, 167, 106;
+  --bs-btn-active-color: var(--grafito);
+  --bs-btn-active-bg: var(--dorado);
+  --bs-btn-active-border-color: var(--dorado);
+  --bs-btn-disabled-color: var(--gris-calido);
+  --bs-btn-disabled-border-color: var(--dorado);
+}
+
+/* Grafito: botones oscuros */
+.btn-dark {
+  --bs-btn-bg: var(--grafito);
+  --bs-btn-border-color: var(--grafito);
+  --bs-btn-hover-bg: #3A3A3A;
+  --bs-btn-hover-border-color: #3A3A3A;
+  --bs-btn-active-bg: #4A4A4A;
+  --bs-btn-active-border-color: #4A4A4A;
+  --bs-btn-disabled-bg: var(--grafito);
+  --bs-btn-disabled-border-color: var(--grafito);
+}
+.btn-outline-dark {
+  --bs-btn-color: var(--grafito);
+  --bs-btn-border-color: var(--grafito);
+  --bs-btn-hover-bg: var(--grafito);
+  --bs-btn-hover-border-color: var(--grafito);
+  --bs-btn-active-bg: var(--grafito);
+  --bs-btn-active-border-color: var(--grafito);
+}
+
+/* Gris cálido y verde bosque */
+.btn-outline-secondary {
+  --bs-btn-color: var(--gris-calido);
+  --bs-btn-border-color: var(--gris-calido);
+  --bs-btn-hover-bg: var(--gris-calido);
+  --bs-btn-hover-border-color: var(--gris-calido);
+  --bs-btn-active-bg: var(--gris-calido);
+  --bs-btn-active-border-color: var(--gris-calido);
+  --bs-btn-disabled-color: var(--gris-calido);
+  --bs-btn-disabled-border-color: var(--gris-calido);
+}
+.btn-outline-success {
+  --bs-btn-color: var(--verde-bosque);
+  --bs-btn-border-color: var(--verde-bosque);
+  --bs-btn-hover-bg: var(--verde-bosque);
+  --bs-btn-hover-border-color: var(--verde-bosque);
+  --bs-btn-active-bg: var(--verde-bosque);
+  --bs-btn-active-border-color: var(--verde-bosque);
+  --bs-btn-focus-shadow-rgb: 70, 118, 83;
+}
+.btn-outline-danger {
+  --bs-btn-color: var(--ladrillo);
+  --bs-btn-border-color: var(--ladrillo);
+  --bs-btn-hover-bg: var(--ladrillo);
+  --bs-btn-hover-border-color: var(--ladrillo);
+  --bs-btn-active-bg: var(--ladrillo);
+  --bs-btn-active-border-color: var(--ladrillo);
+  --bs-btn-focus-shadow-rgb: 166, 75, 60;
+}
+
+/* Tablas */
+.table-dark {
+  --bs-table-color: #fff;
+  --bs-table-bg: var(--grafito);
+  --bs-table-border-color: #3A3A3A;
+}
+.table-light {
+  --bs-table-color: var(--grafito);
+  --bs-table-bg: var(--marfil);
+  --bs-table-border-color: #E3DFD7;
+}
+
+/* Barra de navegación del cliente: enlace activo en dorado */
+.navbar-dark {
+  --bs-navbar-active-color: var(--dorado);
+  --bs-navbar-hover-color: #fff;
+}
+
+/* Estilos propios */
+
+/* Portada del sitio del cliente (capa grafito sobre la foto) */
+.hero {
+  background:
+    linear-gradient(rgba(34, 34, 34, 0.65), rgba(34, 34, 34, 0.65)),
+    url('/imagen/portada1.jpg') center / cover no-repeat;
+  color: #fff;
+}
+
+/* Platos agotados en la carta */
+.plato-agotado img {
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+
+/* Calendario mensual: 7 columnas (Lun a Dom) */
+.calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+.calendario .dia {
+  min-height: 56px;
+  padding: 4px;
+}
+
+/* Menú lateral del administrador */
+.sidebar-admin {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .sidebar-admin {
+    width: 250px;
+    flex-shrink: 0;
+    min-height: 100vh;
+  }
+}
+.sidebar-admin .nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.375rem;
+}
+.sidebar-admin .nav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.sidebar-admin .nav-link.active {
+  color: var(--grafito);
+  background-color: var(--dorado);
+  font-weight: 600;
+}
