@@ -18,7 +18,7 @@ export const platosIniciales = [
     nombre: 'Lomo Saltado',
     precio: 38,
     descripcion: 'Carne de res al wok con tomate, cebolla, papas fritas y arroz.',
-    imagen: '/imagen/plato1.jpg',
+    imagen: `${import.meta.env.BASE_URL}imagen/plato1.jpg`,
     disponible: true,
   },
   {
@@ -26,7 +26,7 @@ export const platosIniciales = [
     nombre: 'Filete de Pollo',
     precio: 45,
     descripcion: 'Pechuga a la plancha con base de arroz integral y vegetales frescos.',
-    imagen: '/imagen/plato2.jpg',
+    imagen: `${import.meta.env.BASE_URL}imagen/plato2.jpg`,
     disponible: true,
   },
   {
@@ -34,7 +34,7 @@ export const platosIniciales = [
     nombre: 'Seco a la Norteña',
     precio: 45,
     descripcion: 'Cerdo estofado en reducción de culantro, con arroz, frijoles y zarza criolla.',
-    imagen: '/imagen/plato3.jpg',
+    imagen: `${import.meta.env.BASE_URL}imagen/plato3.jpg`,
     disponible: true,
   },
 ]
@@ -46,21 +46,21 @@ export const promocionesIniciales = [
     nombre: 'Combo Familiar Lomo',
     precio: 150,
     descripcion: 'Dos platos de Lomo Saltado al precio de uno los días martes y miércoles.',
-    imagen: '/imagen/promocion1.jpg',
+    imagen: `${import.meta.env.BASE_URL}imagen/promocion1.jpg`,
   },
   {
     id: 2,
     nombre: 'Almuerzo Ejecutivo',
     precio: 120,
     descripcion: 'Entrada, plato de fondo y bebida para compartir en tu hora de almuerzo.',
-    imagen: '/imagen/promocion2.jpg',
+    imagen: `${import.meta.env.BASE_URL}imagen/promocion2.jpg`,
   },
   {
     id: 3,
     nombre: 'Festín Norteño',
     precio: 150,
     descripcion: 'Una selección de nuestros mejores platos norteños para toda la mesa.',
-    imagen: '/imagen/promocion3.jpg',
+    imagen: `${import.meta.env.BASE_URL}imagen/promocion3.jpg`,
   },
 ]
 
