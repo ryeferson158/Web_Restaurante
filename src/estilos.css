@@ -1,0 +1,145 @@
+/* Paleta Gourmet / Bistro Moderno */
+:root {
+  /* Tonos Principales */
+  --carbon: #1E2229;          /* Grafito profundo elegante */
+  --dorado: #C99A45;          /* Dorado cálido gastronómico */
+  --dorado-suave: #FBF4E8;    /* Fondo dorado muy tenue */
+  --verde-menta: #2E7D5B;     /* Verde fresco equilibrado */
+  --verde-suave: #EAF5F0;     /* Fondo verde sutil */
+  --coral-suave: #FDEEEB;     /* Fondo alerta suave */
+  --coral: #D9534F;           /* Rojo terracota suave */
+  --fondo-app: #F7F6F3;       /* Crema neutro ultra suave y limpio */
+  --blanco: #FFFFFF;
+  --borde-suave: #EAE6DF;
+
+  /* Sobrescritura de Bootstrap */
+  --bs-body-bg: var(--fondo-app);
+  --bs-body-color: var(--carbon);
+  --bs-border-color: var(--borde-suave);
+
+  --bs-primary: var(--dorado);
+  --bs-primary-rgb: 201, 154, 69;
+  --bs-success: var(--verde-menta);
+  --bs-success-rgb: 46, 125, 91;
+  --bs-dark: var(--carbon);
+  --bs-dark-rgb: 30, 34, 41;
+  --bs-warning: var(--dorado);
+  --bs-warning-rgb: 201, 154, 69;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Tarjetas y Contenedores: acabado pulido y ligero */
+.card {
+  --bs-card-bg: var(--blanco);
+  border-radius: 14px !important;
+  border: 1px solid var(--borde-suave) !important;
+  box-shadow: 0 4px 20px rgba(28, 33, 40, 0.04) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Tablas estilizadas */
+.table {
+  --bs-table-bg: var(--blanco);
+  font-size: 0.92rem;
+}
+.table thead th {
+  background-color: #FBF9F6 !important;
+  color: #646E78 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--borde-suave) !important;
+}
+
+/* Botones: redondeados y sutiles */
+.btn {
+  border-radius: 9px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.btn-sm {
+  border-radius: 7px;
+  padding: 0.35rem 0.75rem;
+}
+
+.btn-warning,
+.btn-primary {
+  background-color: var(--dorado) !important;
+  border-color: var(--dorado) !important;
+  color: #fff !important;
+}
+.btn-warning:hover,
+.btn-primary:hover {
+  background-color: #B58838 !important;
+  border-color: #B58838 !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+.btn-dark {
+  background-color: var(--carbon) !important;
+  border-color: var(--carbon) !important;
+}
+.btn-dark:hover {
+  background-color: #313742 !important;
+  border-color: #313742 !important;
+}
+
+/* Badges redondeados tipo cápsula (Pill) */
+.badge {
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 0.4em 0.75em;
+}
+
+/* Menú lateral moderno */
+.sidebar-admin {
+  background-color: #1A1D23 !important;
+}
+@media (min-width: 992px) {
+  .sidebar-admin {
+    width: 260px;
+    flex-shrink: 0;
+    min-height: 100vh;
+  }
+}
+.sidebar-admin .nav-link {
+  color: #9AA3AF;
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+.sidebar-admin .nav-link:hover {
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.sidebar-admin .nav-link.active {
+  color: #FFFFFF;
+  background-color: var(--dorado);
+  box-shadow: 0 4px 12px rgba(201, 154, 69, 0.35);
+}
+
+/* Estilos de la Portada Cliente */
+.hero {
+  background: linear-gradient(rgba(26, 29, 35, 0.65), rgba(26, 29, 35, 0.65)),
+    url('/imagen/portada1.jpg') center / cover no-repeat;
+  color: #fff;
+}
+
+/* Calendario */
+.calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+.calendario .dia {
+  min-height: 54px;
+  border-radius: 9px;
+  font-size: 0.9rem;
+}
